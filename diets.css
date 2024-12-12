@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    width: 50%;
+    height: 60px;
+    display: flex;
+    box-shadow: 10px black;
+    border-radius: 40px;
+    border: black 2px solid;
+    position: fixed;
+    margin-top: 10px;
+    display: flex;
+    background: white;
+}
+
+.nav-logo{
+    width: 10%;
+    height: auto;
+    margin-left: 35px;
+    margin-right: 20%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(Assets/Cycle.png);
+}
+
+.nav-elements{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-elements ul{
+    list-style: none;
+    display: flex;
+}
+
+.nav-elements li a{
+    text-decoration: none;
+    color: black;
+    margin-right: 50px;
+    font-size: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-elements li a:hover{
+    font-size: 32px;
+    color: #FE7678;
+}
+
+
+/* ----body---- */
+
+.nav-mini {
+    width: 30%;
+    height: 60px;
+    box-shadow: 10px black;
+    border-radius: 40px;
+    border: black 2px solid;
+    position: fixed;
+    margin-top: 90px;
+    display: flex;
+    background: white;
+}
+
+.mini-elements{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mini-elements ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mini-elements li a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    margin-left: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.mini-elements li a:hover{
+    color: #FE7678;
+}
+
+/* ----diets----- */
+
+.list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.diets1, .diets2, .diets3, .diets4, .diets5, .diets6, .diets7, .diets8{
+    margin-bottom: 20px;   
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-left: 100px;
+    padding: 10px;
+    border : 2px solid black;
+    border-radius: 30px;
+}
+
+.diets1 h3, .diets2 h3, .diets3 h3, .diets4 h3, .diets5 h3, .diets6 h3, .diets7 h3, .diets8 h3{
+    font-size: 50px;
+}
+
+.diets1 h4, .diets2 h4, .diets3 h4, .diets4 h4, .diets5 h4, .diets6 h4, .diets7 h4, .diets8 h4{
+    font-size: 30px;
+}
+
+.diets1 p, .diets2 p, .diets3 p, .diets4 p, .diets5 p, .diets6 p, .diets7 p, .diets8 p{
+    font-size: 20px;
+}
+iframe{
+    border-radius: 20px;
+}

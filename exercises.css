@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    width: 50%;
+    height: 60px;
+    display: flex;
+    box-shadow: 10px black;
+    border-radius: 40px;
+    border: black 2px solid;
+    position: fixed;
+    margin-top: 10px;
+    display: flex;
+    background: white;
+}
+
+.nav-logo{
+    width: 10%;
+    height: auto;
+    margin-left: 35px;
+    margin-right: 20%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(Assets/Cycle.png);
+}
+
+.nav-elements{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-elements ul{
+    list-style: none;
+    display: flex;
+}
+
+.nav-elements li a{
+    text-decoration: none;
+    color: black;
+    margin-right: 50px;
+    font-size: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-elements li a:hover{
+    font-size: 32px;
+    color: #FE7678;
+}
+
+
+/* ----body---- */
+
+.nav-mini {
+    width: 30%;
+    height: 60px;
+    box-shadow: 10px black;
+    border-radius: 40px;
+    border: black 2px solid;
+    position: fixed;
+    margin-top: 90px;
+    display: flex;
+    background: white;
+}
+
+.mini-elements{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mini-elements ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mini-elements li a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    margin-left: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.mini-elements li a:hover{
+    color: #FE7678;
+}
+
+
+/* ----diets----- */
+
+.list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.exe1, .exe2, .exe3, .exe4, .exe5, .exe6, .exe7, .exe8{
+    margin-bottom: 20px;   
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    padding: 10px;
+    border : 2px solid black;
+    border-radius: 30px;
+}
+
+.exe1 h3, .exe2 h3, .exe3 h3, .exe4 h3, .exe5 h3, .exe6 h3, .exe7 h3, .exe8 h3{
+    font-size: 50px;
+}
+
+.exe1 h4, .exe2 h4, .exe3 h4, .exe4 h4, .exe5 h4, .exe6 h4, .exe7 h4, .exe8 h4{
+    font-size: 30px;
+}
+
+.exe1 p, .exe2 p, .exe3 p, .exe4 p, .exe5 p, .exe6 p, .exe7 p, .exe8 p{
+    font-size: 20px;
+}
+
+img, video, iframe{
+    width: 560px;
+    height: 315px;
+    border-radius: 20px;
+}

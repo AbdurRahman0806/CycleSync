@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracker</title>
+    <link rel="stylesheet" href="tracker.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo"></div>
+            <div class="nav-elements">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tracker.html">Tracker</a></li>
+                    <li><a href="mens.html">Diets</a></li>
+                    <li><a href="mensE.html">Exercises</a></li>
+                </ul>
+            </div>    
+        </div>
+    </header>
+
+    <!-- ------body------ -->
+
+    <div class="container">
+        <div class="calendar-card">
+            <div class="header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="calendar-icon">
+                    <rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect>
+                    <line x1="16" x2="16" y1="2" y2="6"></line>
+                    <line x1="8" x2="8" y1="2" y2="6"></line>
+                    <line x1="3" x2="21" y1="10" y2="10"></line>
+                </svg>
+                <h1>Period Calendar</h1>
+            </div>
+
+            <div class="inputs">
+                <div class="input-group">
+                    <label for="cycleStart">Cycle Start Date</label>
+                    <input type="date" id="cycleStart">
+                </div>
+                
+                <div class="input-group">
+                    <label for="cycleLength">Cycle Length (days)</label>
+                    <input type="number" id="cycleLength" min="21" max="35" value="28">
+                </div>
+                
+                <button class="button" id="downloadBtn">Download Calendar</button>
+            </div>
+
+            <div class="calendar" id="calendar"></div>
+
+            <div class="legend">
+                <div class="legend-item">
+                    <div class="legend-color period"></div>
+                    <span>Period</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color pre-period"></div>
+                    <span>Pre-Period</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color ovulation"></div>
+                    <span>Ovulation</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="tracker.js"></script>
+</body>
+</html>
